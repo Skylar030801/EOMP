@@ -1,7 +1,48 @@
 body {
+  background: url("res.jpg");
+  background-repeat: no-repeat;
+  background-size: 1900px 1100px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.image-box {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+
+  background: url() center center;
+  background-size: cover;
+
+  color: white;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: box-shadow 0.3s ease-out;
+}
+.image-box:hover {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.2);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+body {
     background: url("res.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1900px 1100px;
   }
   
   .card:hover {
@@ -11,11 +52,11 @@ body {
   .image-box {
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
   
-    background: url(res.jpg) center center;
+    background: url() center center;
     background-size: cover;
   
     color: white;
-    min-height: 100vh;
+    min-height: 72vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,4 +76,38 @@ body {
   h1 {
     font-size: 40px;
   }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #666;
+    overflow: hidden;
+  }
+  
+  .cards {
+    display: flex;
+    
+  }
+  .card {
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+    transition: 0.2s;
+    grid-row: 7;
+  }
+  .card:not(:first-child) {
+    margin-left: -2rem;
+  }
+  .card:not(:last-child):hover,
+  .card:not(:last-child):focus-within {
+    transform: translateY(-1rem);
+  }
+  
+  .card {
+    transform: translateX(2rem);
+  }
+
   

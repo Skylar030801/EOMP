@@ -1,7 +1,7 @@
 body {
   background: url("res.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1900px 1100px;
 }
 
 .card:hover {
@@ -11,11 +11,11 @@ body {
 .image-box {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
 
-  background: url(res.jpg) center center;
+  background: url() center center;
   background-size: cover;
 
   color: white;
-  min-height: 100vh;
+  min-height: 72vh;
   display: flex;
   align-items: center;
   justify-content: center;
